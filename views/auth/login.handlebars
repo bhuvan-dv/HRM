@@ -1,0 +1,36 @@
+<section id="authBlock my-4">
+  <article class="col-md-3 mx-auto bg-white my-2">
+    <h2 class="h2 font-weight-bold text-secondary text-uppercase py-2">
+      LOGIN
+    </h2>
+    <form action="/auth/login" method="post">
+      <div class="form-group">
+        <label for="email">email</label><input
+          type="email"
+          class="form-control"
+          name="email"
+          id="email"
+          placeholder="email"
+        /></div>
+      <div class="form-group">
+        <label for="password">password</label><input
+          type="password"
+          class="form-control"
+          name="password"
+          placeholder="password"
+          id="password"
+        /></div>
+      <div class="form-group">
+        <a
+          href="/auth/register"
+          class="badge badge-sm badge-secondary float-right my-2 p-2"
+        >Register</a>
+        <button
+          class="btn btn-primary btn-block text-uppercase font-weight-bold my-2"
+        >Login
+        </button>
+
+      </div>
+    </form>
+  </article>
+</section>

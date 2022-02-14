@@ -1,0 +1,144 @@
+<section class="container bg-white my-4">
+  <article>
+    <main class="employeeBlock">
+      <h2 class="h2 text-uppercase py-3 font-weight-bold text-success">create
+        employee</h2>
+      <form action="/employee/create-emp" method="post" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col-3 form-group">
+            <label for="emp_name">emp name</label><input
+              type="text"
+              name="emp_name"
+              id="emp_name"
+              placeholder="enter employee name"
+              class="form-control"
+            /></div>
+          <div class="col-3 form-group">
+            <label for="emp_id">emp id</label><input
+              type="text"
+              name="emp_id"
+              id="emp_id"
+              placeholder="enter employee id"
+              class="form-control"
+            /></div>
+          <div class="col-3 form-group">
+            <label for="emp_salary">emp salary</label><input
+              type="text"
+              name="emp_salary"
+              id="emp_salary"
+              placeholder="enter employee salary"
+              class="form-control"
+            /></div>
+          <div class="col-3 form-group">
+            <label for="emp_edu">emp education</label>
+            <select name="emp_edu" id="emp_edu" class="form-control">
+              <option value="be">BE</option>
+              <option value="btech">BTECH</option>
+              <option value="bca">BCA</option>
+              <option value="mca">MCA</option>
+              <option value="msc">MSC</option>
+            </select>
+          </div>
+          <div class="col-3 form-group">
+            <label for="emp_gender">emp gender</label>
+            <input
+              type="radio"
+              name="emp_gender"
+              id="emp_gender"
+              placeholder="male"
+              value="male"
+              class="form-check-input"
+            />male
+            <input
+              type="radio"
+              name="emp_gender"
+              id="emp_gender"
+              value="female"
+              placeholder="female"
+              class="form-check-input1"
+            />female
+          </div>
+          <div class="col-3 form-group">
+            <label for="emp_perc">emp percentage</label>
+            <input
+              type="text"
+              name="emp_perc"
+              id="emp_perc"
+              placeholder="enter employee percentage"
+              class="form-control"
+            /></div>
+          <div class="col-3 form-group">
+            <label for="emp_loc">emp location</label>
+            <input
+              type="text"
+              name="emp_loc"
+              id="emp_loc"
+              placeholder="enter employee location"
+              class="form-control"
+            /></div>
+          <div class="col-3 form-group">
+            <label for="emp_exp">emp experience</label>
+            <input
+              type="text"
+              name="emp_exp"
+              id="emp_exp"
+              placeholder="enter employee experience"
+              class="form-control"
+            /></div>
+            <div class="col-3 form-group">
+            <label for="emp_photo">emp photo</label>
+            <input
+              type="file"
+              name="emp_photo"
+              id="emp_photo"
+              class="form-control"
+            /></div>
+          <div class="col-6 form-group">
+            <label for="emp_skills">emp skills</label>
+            <div>
+              <input type="checkbox" name="emp_skills" value="JS" />JS
+              <input type="checkbox" name="emp_skills" value="react" />react
+              <input type="checkbox" name="emp_skills" value="express" />express
+            </div>
+          </div>
+          <div class="col-3 form-group">
+            <label for="emp_phone">emp phone number</label>
+            <input
+              type="text"
+              name="emp_phone"
+              id="emp_phone"
+              placeholder="enter employee phone"
+              class="form-control"
+            /></div>
+          <div class="col-3 form-group">
+            <label for="emp_email">emp email</label>
+            <input
+              type="text"
+              name="emp_email"
+              id="emp_email"
+              placeholder="enter employee email"
+              class="form-control"
+            /></div>
+          <div class="col-3 form-group">
+            <label for="emp_des">emp designation</label>
+            <input
+              type="text"
+              name="emp_des"
+              id="emp_des"
+              placeholder="enter employee designation"
+              class="form-control"
+            /></div>
+        </div>
+        <button type="submit" class="btn btn-success">submit</button>
+      </form>
+    </main>
+  </article>
+</section>
+{{! emp gender
+emp percentage 
+emp location
+emp experience
+emp skills- check box 
+emp phno
+emp email id
+emp designation}}

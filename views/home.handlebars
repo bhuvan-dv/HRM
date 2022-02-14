@@ -1,0 +1,110 @@
+{{!-- <h1>Welcome</h1>
+<section class="container fluid my-4">
+    <article>
+        <table class="table table-bordered table-hover text-uppercase table-responsive">
+            <thead class="table-dark">
+                <th>photo</th>
+                <th>id</th>
+                <th>name</th>
+                <th>salary</th>
+                <th>designation</th>
+                <th>exp</th>
+                <th>edu</th>
+                <th>email</th>
+                <th>skills</th>
+                <th>phone</th>
+                <th>gender</th>
+                <th>location</th>
+                <th>view profile</th>
+                <th>edit profile</th>
+                <th>delete profile</th>
+            </thead>
+            <tbody class="bg-white">
+                <tr>
+                {{#each payload}}
+                <td><img 
+                class="img-thumbnail"
+                src="{{trimString emp_photo.0.path}}" 
+                alt="{{emp_name}}"></td>
+                <td>{{emp_id}}</td>
+                <td>{{emp_name}}</td>
+                <td>{{emp_salary}}</td>
+                <td>{{emp_des}}</td>
+                <td>{{emp_exp}}</td>
+                <td>{{emp_edu}}</td>
+                <td>{{emp_email}}</td>
+                <td>{{emp_skills}}</td>
+                <td>{{emp_phone}}</td>
+                <td>{{emp_gender}}</td>
+                <td>{{emp_loc}}</td>
+                <td>
+                    <a href="/employee/{{_id}}"><button class="btn btn-primary btn-sm btn-block">View Profile</button></a>
+                </td>
+                <td>
+                    <a href="/employee/edit-emp/{{_id}}"><button class="btn btn-primary btn-sm btn-block">Edit Profile</button></a>
+                </td>
+                <td>
+                    <a href="/employee/delete-emp/{{_id}}">
+                    <button class="delete bg-danger">delete</button>
+                    </a>
+                </td>
+              </tr>
+            </tbody>
+              {{/each}}
+        </table>
+    </article>
+</section> --}}
+
+{{!-- {{username}} --}}
+{{!-- sir did
+<section class="container my-2">
+  <article>
+
+    <div class="card-columns">
+      {{#each payload}}
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{{trimString emp_photo.0.path}}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-capitalize">{{emp_name}}</h5>
+            <p class="card-text">{{emp_email}}</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                ago</small></p>
+            <p>
+              <a
+                href="/employee/{{_id}}"
+                class="btn btn-secondary btn-block"
+              >View Profile</a>
+            </p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+  </article>
+</section> --}}
+<section class="container my-2">
+  <article>
+    <div class="card-columns">
+      {{#each payload}}
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{{trimString emp_photo.0.path}}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-capitalize">{{emp_name}}</h5>
+            <p class="card-text">{{emp_email}}</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                ago</small></p>
+
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </article>
+</section>
